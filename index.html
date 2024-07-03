@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航页面</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+        // 检查用户是否已登录
+        if (!localStorage.getItem('loggedIn')) {
+            // 如果用户未登录，重定向到登录页面
+            window.location.href = 'login.html';
+        }
+    </script>
+    <header>
+        <div class="header-top">
+            <span>guiding...</span>
+            <span>2024年</span>
+        </div>
+        <div class="header-main">
+            <img src="https://tx-free-imgs.acfun.cn/content/2020_3_27/1.5852895232637815E9.gif?imageslim" alt="Animated GIF">
+            <!-- Bing搜索表单 -->
+            <form action="https://www.bing.com/search" method="get" target="_blank">
+                <input type="text" name="q" placeholder="必应一下">
+                <button type="submit">搜索</button>
+            </form>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">obscurity</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="categories">
+            <h2>影视视频</h2>
+            <div class="links">
+                <a href="https://baidu.com">神鸟影院</a>
+                <a href="https://example.com/追影猫">追影猫</a>
+                <a href="https://example.com/盒否看投">盒否看投</a>
+            </div>
+        </section>
+        <section class="categories">
+            <h2>资源网点</h2>
+            <div class="links">
+                <a href="https://example.com/亲宝.com">亲宝.com</a>
+                <a href="https://example.com/网格去广告">网格去广告</a>
+                <a href="https://example.com/小刀娱乐网">小刀娱乐网</a>
+            </div>
+        </section>
+        <section class="categories">
+            <h2>好用工具</h2>
+            <div class="links">
+                <a href="https://example.com/马马异AI读文档">马马异AI读文档</a>
+                <a href="https://example.com/AI生成PPT">AI生成PPT</a>
+                <a href="https://example.com/免费AI写作">免费AI写作</a>
+            </div>
+        </section>
+        <section class="categories">
+            <h2>好用工具</h2>
+            <div class="links">
+                <a href="https://example.com/马马异AI读文档">马马异AI读文档</a>
+                <a href="https://example.com/AI生成PPT">AI生成PPT</a>
+                <a href="https://example.com/免费AI写作">免费AI写作</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>今日所学，明日所用</p>
+    </footer>
+</body>
+</html>
