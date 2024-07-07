@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航页面</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+        // 检查用户是否已登录
+        if (!localStorage.getItem('loggedIn')) {
+            // 如果用户未登录，重定向到登录页面
+            window.location.href = 'login.html';
+        }
+    </script>
+    <header>
+        <div class="header-top">
+            <span>guiding...</span>
+            <span>2024年</span>
+        </div>
+        <div class="header-main">
+            <img src="https://tx-free-imgs.acfun.cn/content/2020_3_27/1.5852895232637815E9.gif?imageslim" alt="Animated GIF">
+            <!-- Bing搜索表单 -->
+            <form action="https://www.bing.com/search" method="get" target="_blank">
+                <input type="text" name="q" placeholder="必应一下">
+                <button type="submit">搜索</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="categories">
+            <h2>影视娱乐</h2>
+            <div class="links">
+                <a href="https://www.x6d.com/daowangsousuo?q=%E6%B4%9B%E9%9B%AA&typeid=0">洛雪音乐</a>
+                <a href="https://zhuiyingmao5.com/">追影猫</a>
+                <a href="https://www.yckceo.com/">源仓库</a>
+            </div>
+        </section>
+        <section class="categories">
+            <h2>资源网点</h2>
+            <div class="links">
+                <a href="https://www.iiice.cn/#/">下次一定</a>
+                <a href="https://uxy.ooxox.cn/?#/">And Color Pro</a>
+                <a href="https://www.sixyin.com/">六音</a>
+            </div>
+        </section>
+        <section class="categories">
+            <h2>好用工具</h2>
+            <div class="links">
+                <a href="hhttps://www.123pan.com/s/AYG9-HtVyH.html">PS精简版</a>
+                <a href="https://www.1ppt.com/">第一PPT</a>
+                <a href="https://www.pptsupermarket.com/">PPT超级市场</a>
+            </div>
+        </section>
+        <section class="categories">
+            <h2>装机必备</h2>
+            <div class="links">
+                <a href="https://xiaodao.lanzoui.com/b0dpv2ffc">BandZip</a>
+                <a href="https://www.123pan.com/s/AYG9-4YjyH">PоtPlayer</a>
+                <a href="https://wwi.lanzoup.com/iq6if030ua2b">迅雷</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>今日所学，明日所用</p>
+    </footer>
+</body>
+</html>
